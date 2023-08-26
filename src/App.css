@@ -135,10 +135,6 @@ body {
   body{
     background-size: auto;
   } 
-  .content {
-      max-width: 970px;
-      margin: 0, 165px;
-  }
 
   p.slogan{
       font-size: 60px;
@@ -158,13 +154,8 @@ body {
     background-size: auto;
   } 
 
-
-  body{
-      background-size: cover;
-  }
-
 .logo{
-  margin-top: 20vw;
+  margin-top: 15vw;
 }
 
   .slogan{
@@ -172,7 +163,7 @@ body {
   }
 
 .site{
-  margin-bottom: 20vw;
+  margin-bottom: 15vw;
 }
 
   .icon{
