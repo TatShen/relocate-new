@@ -1,0 +1,293 @@
+.App {
+  text-align: center;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../public/fonts/Roboto/Roboto-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: Roboto-reg;
+  src: url(../public/fonts/Roboto/Roboto-Regular.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto-mono;
+  src: url(../public/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  background-image: url(../public/images/background.jpg);
+  background-size: auto;
+  margin: 0;
+  font-family: Roboto;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  }
+
+
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vw;
+  margin-bottom: 5vw;
+}
+
+
+.slogan{
+  color: rgba(12, 62, 138, 1);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 120px;
+  font-weight: 700;
+}
+
+.site{
+  font-family: Roboto-reg;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0em;
+  color: rgba(12, 62, 138, 1);
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.timer-conteiner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto-mono;
+  color: white;
+  font-size: 15px;
+
+}
+
+.text{
+  padding: 0 25%;
+}
+
+.block p{
+  color:rgba(12, 62, 138, 1);
+  background-color: white;
+  text-align: center;
+  margin-right: 1vw;
+  width: 8vw;
+  font-size: 45px;
+  margin-bottom: 1vw;
+  border-radius: 8%;
+}
+
+
+
+.icon{
+  text-align: right;
+  margin-right: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}
+
+.button{
+  margin-right: 1vw;
+}
+
+@media (max-width: 1980px) {
+  .content {
+      max-width: 1581px;
+      margin: 0, 165px;
+  }
+}
+
+@media (max-width: 1558px) {
+  .content {
+      max-width: 1130px;
+      margin: 0, 150px;
+  }
+
+  p.slogan{
+      font-size: 90px;
+  }
+
+ 
+}
+
+@media (max-width: 1200px) {
+  body{
+    background-size: auto;
+  } 
+  .content {
+      max-width: 970px;
+      margin: 0, 165px;
+  }
+
+  p.slogan{
+      font-size: 60px;
+      margin-top: 10vw;
+  }
+  .site{
+      font-size: 20px;
+  }
+  
+  .icon{
+      margin-top: 5vw;
+  }
+}
+
+@media (max-width: 992px) {
+  body{
+    background-size: auto;
+  } 
+
+
+  body{
+      background-size: cover;
+  }
+
+.logo{
+  margin-top: 20vw;
+}
+
+  .slogan{
+    margin-top: 30vw;
+  }
+
+.site{
+  margin-bottom: 20vw;
+}
+
+  .icon{
+      text-align: right;
+      margin-top: 10vw;
+      margin-right: 5vw;
+  }
+
+}
+
+@media (max-width: 767px) {
+  body{
+    background-size: auto;
+  } 
+
+  .logo{
+      width: 134px;
+  }
+
+  p.slogan{
+    margin-top: 20vw;
+      font-size: 40px;
+  }
+
+  .site{
+    margin-bottom: 5vw;
+  }
+  
+  .block p{
+    width: 9vw;
+    font-size: 26px;
+  }
+
+  .text{
+    padding: 0 25%;
+    font-size: 9px;
+  }
+
+  .icon{
+    margin-top: 20vw;
+      text-align: right;
+  }
+
+}
+
+@media (max-width: 640px) {
+  body{
+    background-size: auto;
+  } 
+
+  .logo{
+      width: 134px;
+  }
+
+  p.slogan{
+    margin-top: 20vw;
+      font-size: 40px;
+  }
+
+  .site{
+    margin-bottom: 5vw;
+  }
+  
+  .block p{
+    width: 9vw;
+    font-size: 26px;
+  }
+
+  .text{
+    padding: 0 25%;
+    font-size: 9px;
+  }
+
+  .icon{
+    margin-top: 20vw;
+      text-align: right;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  body{
+    background-size: auto;
+  } 
+
+  .logo{
+    width: 134px;
+    margin-top: 32vw;
+  }
+
+  p.slogan{
+    margin-top: 30vw;
+      font-size: 43px;
+  }
+
+  .site{
+    margin-bottom: 15vw;
+    font-size: 25px;
+  }
+  
+  .block p{
+    width: 11vw;
+    font-size: 30px;
+  }
+
+  .text{
+    padding: 0 25%;
+    font-size: 9px;
+  }
+
+  .icon{
+    margin-top: 25vw;
+      text-align: right;
+  }
+
+}
