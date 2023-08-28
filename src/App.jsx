@@ -13,10 +13,10 @@ class App extends React.Component{
             <p class="site"> your adventure begins in</p>
             <Timer className='timer' ></Timer>
             <div class="icon">
-            <a href='#'>
+            <a href='https://www.facebook.com/Relocate-app-104295219363871'>
                 <img src='/images/fb.svg' alt='' className='button'></img>
             </a>
-            <a href='#'>
+            <a href='https://www.instagram.com/relocateapp'>
              <img src='/images/inst.svg' alt='' className='button'></img>
             </a>
               
