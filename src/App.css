@@ -26,7 +26,7 @@
 
 body {
   background-image: url(../public/images/background.jpg);
-  background-size: auto;
+  background-size: cover;
   margin: 0;
   font-family: Roboto;
   min-height: 100vh;
@@ -34,10 +34,11 @@ body {
 }
 
 .container {
+  margin-top: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: stretch;
   }
 
@@ -47,8 +48,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7vw;
-  margin-bottom: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 
 
@@ -57,7 +58,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-  font-size: 120px;
+  font-size: 72px;
   font-weight: 700;
 }
 
@@ -69,7 +70,7 @@ body {
   letter-spacing: 0em;
   color: rgba(12, 62, 138, 1);
   text-align: center;
-  margin-bottom: 5vw;
+  margin-bottom: 4vh;
 }
 
 .timer-conteiner{
@@ -83,10 +84,14 @@ body {
 
 }
 
-.text{
-  padding: 0 25%;
-}
 
+
+.block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .block p{
   color:rgba(12, 62, 138, 1);
   background-color: white;
@@ -94,7 +99,7 @@ body {
   margin-right: 1vw;
   width: 8vw;
   font-size: 45px;
-  margin-bottom: 1vw;
+  margin-bottom: 1vh;
   border-radius: 8%;
 }
 
@@ -103,8 +108,8 @@ body {
 .icon{
   text-align: right;
   margin-right: 5vw;
-  margin-top: 5vw;
-  margin-bottom: 2vw;
+  margin-top: 15vh;
+  margin-bottom: 2vh;
 }
 
 .button{
@@ -125,7 +130,8 @@ body {
   }
 
   p.slogan{
-      font-size: 90px;
+    margin-top: 8vh;
+      font-size: 72px;
   }
 
  
@@ -133,77 +139,77 @@ body {
 
 @media (max-width: 1200px) {
   body{
-    background-size: auto;
+    background-size: cover;
   } 
+
+  .logo{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
 
   p.slogan{
       font-size: 60px;
-      margin-top: 10vw;
+      margin-top: 5vh;
   }
   .site{
-      font-size: 20px;
+      font-size: 30px;
   }
   
   .icon{
-      margin-top: 5vw;
+      margin-top: 5vh;
   }
 }
 
 @media (max-width: 992px) {
   body{
-    background-size: auto;
+    background-size: cover;
   } 
 
 .logo{
-  margin-top: 15vw;
+  margin-top: 10vh;
 }
 
   .slogan{
-    margin-top: 30vw;
+    margin-top: 20vh;
   }
 
 .site{
-  margin-bottom: 15vw;
+  margin-bottom: 6vh;
 }
 
-  .icon{
-      text-align: right;
-      margin-top: 10vw;
-      margin-right: 5vw;
-  }
+.icon{
+  text-align: right;
+  margin-top: 20vh;
+  margin-right: 5vw;
+}
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body{
-    background-size: auto;
+    background-size: cover;
   } 
 
   .logo{
       width: 134px;
+      margin-top: 10vh;
   }
 
   p.slogan{
-    margin-top: 20vw;
+    margin-top: 5vh;
       font-size: 40px;
   }
 
   .site{
-    margin-bottom: 5vw;
+    margin-bottom: 5vh;
   }
   
   .block p{
-    width: 9vw;
     font-size: 26px;
   }
 
-  .text{
-    padding: 0 25%;
-    font-size: 9px;
-  }
-
   .icon{
-    margin-top: 20vw;
+    margin-top: 10vh;
       text-align: right;
   }
 
@@ -219,12 +225,12 @@ body {
   }
 
   p.slogan{
-    margin-top: 20vw;
+    margin-top: 20vh;
       font-size: 40px;
   }
 
   .site{
-    margin-bottom: 5vw;
+    margin-bottom: 5vh;
   }
   
   .block p{
@@ -238,8 +244,8 @@ body {
   }
 
   .icon{
-    margin-top: 20vw;
-      text-align: right;
+    margin-top: 20vh;
+    text-align: right;
   }
 
 }
@@ -253,32 +259,80 @@ body {
 
   .logo{
     width: 134px;
-    margin-top: 32vw;
+    margin-top: 10vh;
   }
 
   p.slogan{
-    margin-top: 30vw;
-      font-size: 43px;
+    margin-top: 5vh;
+    font-size: 43px;
   }
 
   .site{
-    margin-bottom: 15vw;
+    margin-bottom: 5vh;
     font-size: 25px;
   }
   
   .block p{
-    width: 11vw;
+    width: 15vw;
     font-size: 30px;
   }
 
-  .text{
-    padding: 0 25%;
-    font-size: 9px;
+  .icon{
+    margin-top: 15vh;
+    text-align: right;
+    margin-bottom: 5vh;
+  }
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 932px) {
+  
+  body{
+    background-size: auto;
+  } 
+
+  .logo{
+    width: 134px;
+    margin-top: 10vh;
+  }
+
+  p.slogan{
+    margin-top: 5vh;
+    font-size: 43px;
+  }
+
+  .site{
+    margin-bottom: 5vh;
+    font-size: 25px;
+  }
+  
+  .block p{
+    width: 15vw;
+    font-size: 30px;
   }
 
   .icon{
-    margin-top: 25vw;
-      text-align: right;
+    margin-top: 15vh;
+    text-align: right;
+    margin-bottom: 5vh;
   }
+}
 
+.plan_1{
+  width: 113.529px;
+  height: 123.083px;
+  transform: rotate(150.227deg);
+  flex-shrink: 0;
+  position: absolute;
+  top: 160px;
+  left:60px;
+  animation: move 5s linear infinite;
+  offset-path: path('M1 71.94C420.787 -39.3236 519.676 249.821 538 268');
+  offset-rotate: auto ;
+}
+
+@keyframes move {
+  100% {
+    offset-distance: 100%;
+  }
 }
